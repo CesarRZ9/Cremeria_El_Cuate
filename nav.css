@@ -1,0 +1,148 @@
+
+.nav{
+	height: 
+0.1px;
+}
+
+nav>.enlaces{
+    margin-right: 6%;
+    margin-top:10px;
+}
+nav>.enlaces> a{
+    color:rgb(236, 236, 236);
+    text-decoration: none;
+    font-size: 120%;
+    padding: 15px;
+}
+
+nav >.enlaces> a:hover{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 4px;
+    cursor: pointer;
+}
+.navp{
+    height: 150px;
+    background: rgb(0, 162, 255);
+    padding-top: 1%;
+}
+.field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em sol;
+}
+  .field {
+    display:flex;
+	position: absolute;
+	height:60px;
+	top: 5%;
+	margin-left: 22%;
+    width:40%;
+    flex-direction:row;
+	border: none;
+  }
+  
+  .field>input[type=text],
+  .field>button {
+	  height: 50px;
+    display:block;
+    font:1.2em 'Arial';
+  }
+ 
+  .ibus{
+	  bottom: 50px;
+  }
+#search:hover{
+    cursor: pointer;
+	border:1px solid white
+}
+#search{
+	margin-left: 0.5px;
+    padding:0.6em 0.7em;
+    display:block;
+    font:1.2em 'Arial';
+	border:#232F3E;
+	background: #ffae00;
+	bottom: 30px;
+	
+  }
+  .ibus{
+	  border-radius: 30px;
+  }
+.logo{
+	position: relative;
+    width: 10%;
+    height:100px;
+    display: flex;
+    margin-left: 5%;
+	margin-bottom: 9px;
+}
+.logo:hover{
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+
+    :root{
+    --colorTextos: #49454567;
+}
+   
+.menu .contenedor-enlaces-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a {
+	color: #ccc;
+	border: 1px solid transparent;
+	padding: 7px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a:hover {
+	border: 1px solid rgba(255,255,255,.4);
+}
+
+@media screen and (max-width: 1000px) {
+	.menu .contenedor-enlaces-nav {
+		padding: 0 10px;
+	}
+
+	.menu .contenedor {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.menu .contenedor-enlaces-nav {
+		padding: 20px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		left: 0;
+		background: #232F3F;
+		height: 100vh;
+		width: 80%;
+		z-index: 2000;
+		transition: .3s ease all;
+		transform: translate(-100%);
+	}
+
+	.menu .contenedor-enlaces-nav.activo {
+		transform: translate(0%);
+	}
+
+	.menu .enlaces {
+		width: 100%;
+	}
+
+	.menu .enlaces a {
+		display: block;
+		margin: 10px 0;
+		padding: 10px;
+	}
+}

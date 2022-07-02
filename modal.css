@@ -1,0 +1,70 @@
+
+.modal {
+    position: fixed;
+    text-align: center;
+    margin: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	
+	top: 0;
+	left: 0;
+	
+	display: flex;
+	
+	animation: modal 1s 1s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+#lp{
+	transform: rotate(45deg),translate(-55deg);
+}
+.contenido {
+	margin: auto;
+    text-align: center;
+	width: 90%;
+	height: 50%;
+	background: white;
+	border-radius: 10px;
+}
+
+#cerrar {
+	display: none;
+    text-align: center;
+}
+#cerrar + label {
+    text-align: center;
+	position: fixed;
+	color: #fff;
+	font-size: 25px;
+	z-index: 50;
+	background: rgb(0, 0, 0);
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 80%;
+	right: 150px;
+	top: 80px;
+	cursor: pointer;
+	
+	animation: modal 2s 3s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+#cerrar +label:hover{
+background: red;
+cursor: pointer;
+
+}
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+	display: none;
+}
+#cerrar:checked + label, #cerrar:checked ~ .marquee {
+	display: none;
+}
+@keyframes modal {
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
